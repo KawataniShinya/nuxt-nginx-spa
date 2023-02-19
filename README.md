@@ -17,7 +17,27 @@ $ npm run start
 $ npm run generate
 ```
 
+
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+## Start Up on Docker
+1. 静的コンテンツビルド
+```
+npm run build
+npm run generate
+```
+
+2. コンテナ起動
+```
+docker-compose build
+docker-compose up -d
+```
+
+3. ブラウザアクセス(動的ページURL直接指定でもアクセス可)
+```
+http://localhost/products
+http://localhost/products/1/show
+```
 
 ## Special Directories
 
